@@ -1,7 +1,7 @@
 # MultiClass-Library
 Create your own library class with an internal collection of books.
 
-##MVP
+# MVP
 Books should have title, author and genre.
 Write a method to count the number of books in the library.
 Write a method to add a book to the library stock.
