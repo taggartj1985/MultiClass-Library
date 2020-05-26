@@ -61,10 +61,10 @@ public class LibraryTest {
 
     @Test
     public void canGetGenre(){
-        library.addBook(book1);
-        library.addBook(book2);
-        library.addBook(book3);
-        library.addGenres(book1);
-        assertEquals(2, library.getGenre());
+        library.addGenres("Horror", 1);
+        library.addGenres("Action", 1);
+        library.addGenres("Horror", 1);
+        library.addGenres("Fantasy", 1);
+        assertEquals(3, library.getGenre());
     }
 }
