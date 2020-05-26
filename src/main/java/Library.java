@@ -1,13 +1,17 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Library {
 
     private int capacity;
     private ArrayList<Book> books;
+    private HashMap<String, int> genres;
 
     public Library(){
         this.capacity = 5;
         this.books = new ArrayList<Book>();
+        this.genres = new HashMap<String, int>();
+
     }
 
     public int getCapacity(){

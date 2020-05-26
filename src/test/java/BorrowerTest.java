@@ -16,11 +16,6 @@ public class BorrowerTest {
         library = new Library();
     }
 
-//    @Test
-//    public void canBorrowBook(){
-//        borrower.borrowsBook(library, book);
-//        assertEquals(1, borrower.countBorrowsBooks());
-//    }
 
     @Test
     public void canCheckBorrowedSize(){
