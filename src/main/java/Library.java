@@ -34,7 +34,7 @@ public class Library {
         return book;
     }
 
-    public HashMap<String, Integer> getGenre() {
-        return this.genre;
+    public int getGenre() {
+        return this.genre.size();
     }
 }
