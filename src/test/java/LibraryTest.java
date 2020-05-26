@@ -64,6 +64,7 @@ public class LibraryTest {
         library.addBook(book1);
         library.addBook(book2);
         library.addBook(book3);
+        library.addGenres(book1);
         assertEquals(2, library.getGenre());
     }
 }

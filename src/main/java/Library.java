@@ -10,7 +10,7 @@ public class Library {
     public Library(){
         this.capacity = 5;
         this.books = new ArrayList<Book>();
-        this.genre = new HashMap<String, Integer>();
+        this.genre = new HashMap<String, String, String>();
 
     }
 
@@ -32,6 +32,10 @@ public class Library {
     public Book removeBook(Book book){
         this.books.remove(book);
         return book;
+    }
+
+    public void addGenres(String key, String value){
+        this.genre.put(key, value);
     }
 
     public int getGenre() {
