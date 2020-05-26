@@ -58,4 +58,12 @@ public class LibraryTest {
         library.removeBook(book3);
         assertEquals(2, library.bookCount());
     }
+
+    @Test
+    public void canGetGenre(){
+        library.addBook(book1);
+        library.addBook(book2);
+        library.addBook(book3);
+        assertEquals(2, library.getGenre().size());
+    }
 }

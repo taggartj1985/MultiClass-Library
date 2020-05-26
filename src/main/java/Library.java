@@ -5,12 +5,12 @@ public class Library {
 
     private int capacity;
     private ArrayList<Book> books;
-    private HashMap<String, int> genres;
+    private HashMap<String, Integer> genre;
 
     public Library(){
         this.capacity = 5;
         this.books = new ArrayList<Book>();
-        this.genres = new HashMap<String, int>();
+        this.genre = new HashMap<String, Integer>();
 
     }
 
@@ -32,5 +32,9 @@ public class Library {
     public Book removeBook(Book book){
         this.books.remove(book);
         return book;
+    }
+
+    public HashMap<String, Integer> getGenre() {
+        return this.genre;
     }
 }
